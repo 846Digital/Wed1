@@ -1,0 +1,38 @@
+/* Hallmark · macrostructure: Letter · theme: custom · airy botanical paper · nav: N9 · footer: Ft6
+ * display: Cormorant Garamond · body: Manrope · axes: light / roman-serif / green */
+.garden-hero { display: grid; gap: var(--space-xl); padding-block: var(--space-lg) var(--space-2xl); }
+.garden-hero-copy { position: relative; z-index: 1; align-self: center; }
+.garden-hero h1 { font-size: var(--text-display); font-weight: 300; letter-spacing: -.045em; }
+.garden-hero h1 .amp { display: block; font-size: .6em; padding-inline-start: 1.1em; line-height: .95; color: var(--color-muted); }
+.garden-hero h1 span:not(.amp) { display: block; }
+.garden-hero .invitation-note { max-width: 34ch; margin-block: var(--space-xl); }
+.garden-hero .photo { aspect-ratio: 4/5; border-radius: 48% 48% 0 0; }
+.garden-hero .hero-date { margin-block-start: var(--space-lg); font-size: 1.15rem; letter-spacing: .12em; }
+.garden-letter { background: var(--color-surface); }
+.garden-letter .letter-content { max-width: 750px; margin-inline: auto; }
+.garden-letter h2 { font-size: clamp(3rem, 6vw, 5rem); margin-block-end: var(--space-xl); }
+.garden-letter p { font-family: var(--font-display); font-size: clamp(1.65rem, 3vw, 2.5rem); line-height: 1.5; }
+.garden-letter .sign { margin-block-start: var(--space-xl); font-size: 1.65rem; }
+.garden-date { display: grid; gap: var(--space-2xl); align-items: center; }
+.garden-date .date-number { display: flex; align-items: baseline; flex-wrap: wrap; gap: var(--space-lg); margin-block: var(--space-lg); }
+.garden-date .date-number strong { font-family: var(--font-display); font-size: clamp(6rem, 12vw, 10rem); font-weight: 300; line-height: 1; }
+.garden-place { display: grid; gap: var(--space-2xl); align-items: center; }
+.garden-place .photo { aspect-ratio: 4/5; max-height: 630px; }
+.garden-place .photo img { object-position: 50% 70%; }
+.garden-place .venue-name { font-family: var(--font-display); font-size: 2rem; line-height: 1.25; }
+.garden-story { padding-block-start: 0; }
+.garden-story p { font-family: var(--font-display); font-size: clamp(1.8rem, 3.4vw, 3rem); max-width: 40ch; line-height: 1.45; }
+.garden-timeline { background: var(--color-surface); }
+.garden-timeline-grid { display: grid; gap: var(--space-xl); }
+.garden-timeline .schedule { display: grid; gap: 0; padding-inline-start: var(--space-lg); border-inline-start: 1px solid var(--color-rule); }
+.garden-timeline .event { position: relative; display: grid; gap: var(--space-sm); padding-block: var(--space-xl); }
+.garden-timeline .event::before { content: ''; position: absolute; inset-inline-start: calc(-1.5rem - 5px); top: 3rem; width: 9px; height: 9px; border: 1px solid var(--color-accent); border-radius: var(--radius-round); background: var(--color-surface); }
+.garden-timeline time { font-size: 1.2rem; color: var(--color-accent); font-variant-numeric: tabular-nums; }
+.garden-timeline h3 { font-size: 2.5rem; }
+.garden-timeline .event p { max-width: 38ch; color: var(--color-muted); }
+.garden-details { display: grid; gap: var(--space-3xl); }
+.garden-details h2 { margin-block-end: var(--space-xl); }
+.garden-footer { background: var(--color-surface); padding-block: var(--space-3xl) var(--space-xl); }
+.garden-footer .closing { font-family: var(--font-display); font-size: clamp(3rem, 7vw, 6rem); max-width: 15ch; line-height: 1.15; }
+.garden-footer .names { font-family: var(--font-display); font-size: 2rem; margin-block-start: var(--space-xl); }
+@media (min-width: 48rem) { .garden-hero { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 0; padding-block: var(--space-xl) var(--space-3xl); } .garden-hero h1 { width: 115%; font-size: clamp(4rem, 7.2vw, 7rem); } .garden-hero .photo { height: clamp(28rem, 65svh, 42rem); aspect-ratio: auto; } .garden-date { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } .garden-place { grid-template-columns: minmax(0, .9fr) minmax(0, 1fr); gap: var(--space-3xl); } .garden-timeline-grid { grid-template-columns: minmax(0, .85fr) minmax(0, 1fr); gap: var(--space-2xl); } .garden-timeline h2 { position: sticky; top: var(--space-2xl); align-self: start; } .garden-details { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--space-2xl); } }
